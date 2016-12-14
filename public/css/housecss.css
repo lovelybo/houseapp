@@ -1,0 +1,19 @@
+body {
+  background: #f5eeea;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  background: url("../img/logo.png");
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  margin-top: -60px;
+  margin-left: -70px;
+}
+.copy {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -56px;
+}

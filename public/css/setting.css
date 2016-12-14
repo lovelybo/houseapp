@@ -1,0 +1,277 @@
+body {
+  background: #efeff4;
+  font-family: Helvetica;
+}
+.up {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+.back {
+  height: 50px;
+  width: 50px;
+  background: url("../img/nav_icon_back@2x.png") no-repeat;
+  background-size: 25% 50%;
+  position: absolute;
+  left: 15px;
+  top: 25%;
+}
+.font {
+  color: #eb611a;
+  font-size: 16px;
+}
+.danger {
+  height: 40px;
+  margin: 30px 5% 20px 5%;
+  width: 90%;
+  background: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+.bgbody {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.go {
+  position: relative;
+  margin-top: 10px;
+}
+.go:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -8px;
+  background: url("../img/content_list_icon_right@2x (2).png") no-repeat;
+  background-size: 50% 50%;
+}
+.menu {
+  flex: 5;
+  color: #b7b7b7;
+  text-align: center;
+}
+.menu-txt {
+  font-size: 14px;
+  display: block;
+}
+.seat {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  width: 90%;
+}
+.menu-pic {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin: 0px auto;
+}
+.choose {
+  width: 50px;
+  heught: 50px;
+  margin: 0px 15px;
+}
+.demand {
+  background: #fff;
+  width: 86%;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #bebebe;
+  padding: 10px 15px;
+  position: relative;
+}
+.demand-title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: 4C 4C 4C;
+}
+.date {
+  float: right;
+  font-style: normal;
+  font-size: 12px;
+  display: inline-block;
+  color: #b9b9b9;
+}
+.demand-body {
+  font-size: 12px;
+}
+.all {
+  background: #efeff4;
+  border-radius: 5px;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: center;
+  width: 5em;
+  padding: 5px 10px;
+  color: #858586;
+}
+.especial {
+  margin-top: -16px;
+}
+.tabs {
+  display: flex;
+  overflow: auto;
+  padding: 0px;
+}
+.tabs-cell {
+  float: left;
+  list-style: none;
+  padding: 15px 0px;
+  text-align: center;
+  flex: 4;
+}
+.active {
+  border-bottom: 1px solid #ea5404;
+  color: #ea5404;
+}
+.shuxian-c {
+  flex: 0.2;
+  float: left;
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #ea5404;
+  padding: 15px 0px;
+}
+.indentity {
+  float: right;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.zh {
+  background-color: #15b755;
+  padding: 0px 15px;
+}
+.jjr {
+  background-color: #0193e6;
+  padding: 0px 8px;
+}
+.zs {
+  background-color: #97b715;
+  padding: 0px 15px;
+}
+.dls {
+  background-color: #ea5404;
+  padding: 0px 8px;
+}
+.source {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.source-cell {
+  float: left;
+  flex: 4.5;
+  margin: 0px 5px;
+}
+.source-cells {
+  float: left;
+  flex: 3;
+  margin: 5px 5px;
+  text-align: right;
+  position: relative;
+}
+.source-title {
+  margin-top: 5px;
+  display: block;
+  font-size: 16px;
+}
+.source-adds {
+  font-size: 14px;
+  color: #767676;
+  display: block;
+  margin: 5px 0px;
+}
+.source-type {
+  font-size: 12px;
+  color: #ee783f;
+  padding: 3px 5px;
+  border: 1px solid #ee783f;
+  border-radius: 5px;
+  display: block;
+  width: 5em;
+  text-align: center;
+  margin: 5px 0px;
+}
+.source-price {
+  color: #ee783f;
+  font-size: 14px;
+}
+.source-unit {
+  font-size: 12px;
+  color: #737373;
+  padding-left: 10px;
+}
+.source-pic {
+  height: 15px;
+  width: 15px;
+}
+.source-time {
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+  color: #737373;
+}
+.bgbody-bj {
+  margin-top: 10px;
+}
+.data {
+  color: #bebebe;
+  font-size: 12px;
+  float: right;
+  margin-right: 20px;
+  line-height: 20px;
+}
+.btn {
+  height: 30px;
+  width: 50px;
+  border-radius: 15px;
+  background: #ea5404;
+  display: inline-block;
+  float: right;
+  margin-top: -6px;
+  box-shadow: inset 5px -5px 5px #ea5404;
+}
+.btn-info {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0px -2px 5px #c2ccd1;
+}
+.logo {
+  padding: 30px;
+  margin: 0px auto;
+}
+.logo-pic {
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.logo-kuang {
+  margin: 10px auto;
+  height: 30px;
+  width: 120px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.tel {
+  font-size: 12px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 4px;
+}
