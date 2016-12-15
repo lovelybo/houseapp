@@ -57,6 +57,6 @@ function autoSwipe(){
     }, 2000);
 }
 autoSwipe();
-var $scroll-y=
+
 
 
