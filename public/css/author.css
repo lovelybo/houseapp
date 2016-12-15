@@ -1,26 +1,39 @@
 body {
   background: #efeff4;
   font-family: Helvetica;
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 .up {
   height: 50px;
-  text-align: center;
+  display: flex;
+  z-index: 5;
   line-height: 50px;
   background-color: #fff;
-  position: relative;
+  padding-right: 50px;
+  position: fixed;
+  top: 0;
+  width: 94%;
 }
 .back {
   height: 50px;
   width: 50px;
-  background: url("../img/nav_icon_back@2x.png") no-repeat;
+  background: url("../img/nav_icon_back@2x.png") no-repeat 50% 50%;
   background-size: 25% 50%;
-  position: absolute;
-  left: 15px;
-  top: 25%;
+  display: inline-block;
 }
 .font {
   color: #eb611a;
   font-size: 16px;
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+}
+.font-h {
+  font-size: 16px;
+  display: inline-block;
+  flex: 1;
+  text-align: center;
 }
 .danger {
   height: 40px;
@@ -60,22 +73,24 @@ body {
 .menu-txt {
   font-size: 14px;
   display: block;
+  margin-top: 2px;
 }
 .seat {
+  padding: 10px 0px;
   position: fixed;
   bottom: 0px;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 .menu-pic {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   display: block;
   margin: 0px auto;
 }
 .choose {
-  width: 50px;
-  heught: 50px;
+  width: 40px;
+  height: 38px;
   margin: 0px 15px;
 }
 .demand {
@@ -171,26 +186,34 @@ body {
   margin: 0px;
 }
 .source-cell {
-  float: left;
-  flex: 4.5;
+  display: inline-block;
+  flex: 3;
   margin: 0px 5px;
 }
 .source-cells {
-  float: left;
-  flex: 3;
-  margin: 5px 5px;
-  text-align: right;
-  position: relative;
+  display: inline-block;
+  flex: 5;
+  margin: 0px 5px;
 }
 .source-title {
   margin-top: 5px;
-  display: block;
   font-size: 16px;
+  position: relative;
+}
+.source-title:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: block;
+  width: 28px;
+  height: 26px;
+  background: url("../img/collect_icon_press@2x.png") no-repeat;
+  background-size: 50% 50%;
 }
 .source-adds {
   font-size: 14px;
   color: #767676;
-  display: block;
   margin: 5px 0px;
 }
 .source-type {
@@ -199,34 +222,32 @@ body {
   padding: 3px 5px;
   border: 1px solid #ee783f;
   border-radius: 5px;
-  display: block;
   width: 5em;
   text-align: center;
   margin: 5px 0px;
 }
+.source-txt {
+  color: #767676;
+  font-size: 12px;
+}
 .source-price {
   color: #ee783f;
-  font-size: 14px;
+  font-size: 16px;
 }
 .source-unit {
   font-size: 12px;
   color: #737373;
   padding-left: 10px;
 }
-.source-pic {
-  height: 15px;
-  width: 15px;
-}
-.source-time {
-  font-size: 12px;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  right: 0px;
-  color: #737373;
-}
 .bgbody-bj {
   margin-top: 10px;
+  background-color: #fff;
+}
+.txt-right {
+  float: right;
+}
+article {
+  margin-bottom: 60px;
 }
 .set {
   height: 50px;
