@@ -13,7 +13,7 @@ body {
   padding-right: 50px;
   position: fixed;
   top: 0;
-  width: 94%;
+  width: 90%;
 }
 .back {
   height: 50px;
@@ -47,11 +47,12 @@ body {
 }
 .bgbody {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 .go {
   position: relative;
   margin-top: 10px;
+  padding: 10px 0px;
 }
 .go:after {
   content: '';
@@ -229,10 +230,11 @@ body {
 .source-txt {
   color: #767676;
   font-size: 12px;
+  line-height: 18px;
 }
 .source-price {
   color: #ee783f;
-  font-size: 16px;
+  line-height: 16px;
 }
 .source-unit {
   font-size: 12px;
@@ -246,8 +248,31 @@ body {
 .txt-right {
   float: right;
 }
+.txt-left {
+  float: left;
+}
 article {
   margin-bottom: 60px;
+}
+.xx-txt {
+  position: relative;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  display: flex;
+}
+.xx-txt:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  height: 1px;
+  background-color: #cecece;
+}
+body {
+  padding-bottom: 50px;
 }
 .bg-pic {
   height: 60px;
@@ -255,6 +280,7 @@ article {
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
+  vertical-align: bottom;
 }
 .txt-kuang {
   height: 60px;
@@ -263,12 +289,121 @@ article {
 .bg-txt {
   font-size: 14px;
   color: #000;
-  display: block;
   height: 1.5em;
+  margin-top: 10px;
 }
 .bg-txta {
   font-size: 12px;
-  color: #bebebe;
-  display: block;
+  color: #767676;
   height: 1.5em;
+}
+p {
+  margin: 5px 0px;
+}
+.font-body {
+  color: #bcbcbd;
+  font-size: 14px;
+  margin: 0px;
+  padding: 10px 15px;
+}
+.font-kuang {
+  display: inline-block;
+  margin-top: 8px;
+}
+.right {
+  float: right;
+  margin-right: 10px;
+}
+.xx-t {
+  position: relative;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+}
+.xx-t:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  height: 1px;
+  background-color: #cecece;
+}
+.xx-tx {
+  position: relative;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+}
+.txt_box {
+  float: right;
+}
+.txt_box_k {
+  display: inline-block;
+}
+.txt_box_s {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0px;
+}
+.txt-b {
+  line-height: 16px;
+  margin-bottom: 0px;
+}
+.phone {
+  height: 60px;
+  width: 60px;
+  background: url("../img/content_icon_call@2x.png") no-repeat center right 10px;
+  background-size: 40%;
+  border-left: 1px solid #f5f5f5;
+  float: right;
+}
+.menu {
+  color: #ea560a;
+  border-right: 1px solid #f5f5f5;
+  padding: 15px 0px;
+}
+.seat {
+  padding: 0px;
+}
+.change {
+  width: 95%;
+  text-align: right;
+  border: 0px;
+  outline: none;
+}
+.danger {
+  background: #ea560a;
+}
+.dis-txt {
+  font-size: 12px;
+}
+.check_box {
+  display: block;
+  line-height: 22px;
+  padding: 5px 0px;
+}
+.check {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border: 1px solid #d5d5d5;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+.check_active {
+  background: url("../img/content_list_icon_right@2x.png") no-repeat center;
+  background-size: 90%;
+}
+.why {
+  width: 100%;
+  border: 0px;
+  background: #efeff4;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+.hidden {
+  display: none;
 }
