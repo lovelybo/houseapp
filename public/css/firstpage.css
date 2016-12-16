@@ -13,7 +13,7 @@ body {
   padding-right: 50px;
   position: fixed;
   top: 0;
-  width: 94%;
+  width: 90%;
 }
 .back {
   height: 50px;
@@ -47,11 +47,12 @@ body {
 }
 .bgbody {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 .go {
   position: relative;
   margin-top: 10px;
+  padding: 10px 0px;
 }
 .go:after {
   content: '';
@@ -229,10 +230,11 @@ body {
 .source-txt {
   color: #767676;
   font-size: 12px;
+  line-height: 18px;
 }
 .source-price {
   color: #ee783f;
-  font-size: 16px;
+  line-height: 16px;
 }
 .source-unit {
   font-size: 12px;
@@ -246,8 +248,28 @@ body {
 .txt-right {
   float: right;
 }
+.txt-left {
+  float: left;
+}
 article {
   margin-bottom: 60px;
+}
+.xx-txt {
+  position: relative;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  display: flex;
+}
+.xx-txt:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  height: 1px;
+  background-color: #cecece;
 }
 body {
   padding: 0px;
