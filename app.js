@@ -7,10 +7,10 @@ var proxy = require('http-proxy-middleware');
 
 //实例 express
 var app = express();
-
+var sha1 = require('sha1');
 //定义通过 /api 访问的请求，转发到指定路径
 app.use('/api', proxy({
-    target: 'http://122.10.30.153:9901',
+    target: 'http://122.10.30.153:16910',
     pathRewrite: {
         '^/api': '/'
     }
@@ -40,9 +40,25 @@ app.get('/login', function(req, res){
 
 
 //监听端口 9999， 用来启动服务
-app.listen(9978, function(){
-    console.log('server run at port 9978');
+app.listen(16910, function(){
+    console.log('server run at port 16910');
 });
 
 //模块导出
 module.exports = app;
+
+app.use('/weixin',function (req,res) {
+    var obj = req.query;
+    console.log("weixin", obj);
+    var arr = ["taskasd",obj.timestamp,obj.nonce];
+    arr.sort();
+    var str = sha1(arr.join(""));
+    console.log('sha1   ', str);
+
+    console.log('signature', obj.signature === str)
+    if(obj.signature===str){
+        res.send(obj.echostr).end();
+    }else {
+        res.send("yanzhengshibai").end();
+    }
+})

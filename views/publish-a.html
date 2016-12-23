@@ -6,16 +6,16 @@
 		 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 		 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		 <link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css" type="text/css"/>
-		<link href="../public/css/publish.css" rel="stylesheet" type="text/css"/>
+		<link href="../public/css/publish-a.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<div class="up">
 			<span class="back">取消</span>
 			<span class="font-h">发布房源</span>	
 		</div>
-		<div>
-			<input type="text" class="searchbuild" />
-			<span>新增楼盘</span>
+		<div class="search_box">
+			<input type="text" class="searchbuild" placeholder="搜索想要发布的大厦"/>
+			<span class="add"></span><span class="search_txt">新增楼盘</span>
 		</div>
 		<div class="bgbody">
 			<div class="msg-title">大厦信息</div>
@@ -47,26 +47,28 @@
 				    </div>
 				</div>
 				<div class="">
-					<span class="txt-d">房源面积</span><div class="ipt-k"><input type="text" placeholder="20" class=""/><span class="">m²</span></div>
-					<span class="txt-d">房源单价</span><div><input type="text" placeholder="6.5" class=""/><span class="">元/m²/天</span></div>
-					<span class="txt-d">交付状态</span>
-					<div class="select_box">
-				        <div class="select-title" data-val="2">标准交付</div>
-				        <ul class="select-list">
-				            <li class="select-li" data-val="1">毛坯交付</li>
-				            <li class="select-li" data-val="2">标准交付</li>
-				            <li class="select-li" data-val="3">简装</li>
-				            <li class="select-li" data-val="4">精装</li>
-				            <li class="select-li" data-val="5">豪装</li>
-				        </ul>
-				    </div>
-					<span class="txt-d">交付日期</span><div><input type="text" placeholder="2015-06-21" class=""/><span class="radio_btn"><i class="icon">&nbsp;</i></span><span class="">是否现房</span></div>
-					<span class="txt-d">最短租期</span><div><input type="text" placeholder="3年" class=""/></div>
-					<span class="txt-d">付款方式</span><div><input type="text" placeholder="押三付一" class=""/><span class="radio_btn"><i class="icon">&nbsp;</i></span><span class="">是否含发票</span></div>
-					<span class="txt-d">是否结佣</span><div><input type="text" placeholder="一个月" class=""/><span class="radio_btn"><i class="icon">&nbsp;</i></span><span class="">是</span></div>
-					<span class="txt-d">装修免租</span><div><input type="text" placeholder="一个月" class=""/></div>
-					<span class="txt-d">看房时间</span><div><input type="text" placeholder="8：00" class=""/><input type="text" placeholder="20：00" class=""/></div>
-					<span class="txt-d">房源简介</span><div><textarea rows="5" placeholder="房源简介"></textarea></div>
+					<div class="ipt-k"><span class="txt-d">房源面积</span><input type="text" placeholder="20" class="ipt_txt"/><span class="text-a">m²</span></div>
+					<div class="ipt-k"><span class="txt-d">房源单价</span><input type="text" placeholder="6.5" class="ipt_txt"/><span class="text-a">元/m²/天</span></div>
+					<div class="ipt-k">
+						<span class="txt-d">交付状态</span>
+						<div class="select_box">
+							<div class="select-title text-a" data-val="2">标准交付</div>
+					        <ul class="select-list">
+					            <li class="select-li" data-val="1">毛坯交付</li>
+					            <li class="select-li" data-val="2">标准交付</li>
+					            <li class="select-li" data-val="3">简装</li>
+					            <li class="select-li" data-val="4">精装</li>
+					            <li class="select-li" data-val="5">豪装</li>
+					        </ul>
+				        </div>
+					</div>
+					<div class="ipt-k"><span class="txt-d">交付日期</span><input type="text" placeholder="2015-06-21" class="ipt_txt"/><span class="text-a"><span class="radio_btn radio_es"><i class="icon">&nbsp;</i></span><span>是否现房</span></span></div>
+					<div class="ipt-k"><span class="txt-d">最短租期</span><input type="text" placeholder="3年" class="ipt_t"/></div>
+					<div class="ipt-k"><span class="txt-d">付款方式</span><input type="text" placeholder="押三付一" class="ipt_txt"/><span class="text-a"><span class="radio_btn radio_es"><i class="icon">&nbsp;</i></span><span>是否含发票</span></span></div>
+					<div class="ipt-k"><span class="txt-d">是否结佣</span><input type="text" placeholder="一个月" class="ipt_txt"/><span class="text-a"><span class="radio_btn radio_es"><i class="icon">&nbsp;</i></span><span>是</span></span></div>
+					<div class="ipt-k"><span class="txt-d">装修免租</span><input type="text" placeholder="一个月" class="ipt_t"/></div>
+					<div class="ipt-k"><span class="txt-d">看房时间</span><input type="text" placeholder="8：00" class="ipt_tx"/><input type="text-a" placeholder="20：00" class="ipt_tx"/></div>
+					<div class="ipt-s"><span class="txt-d">房源简介</span><textarea rows="5" placeholder="房源简介" class="ipt-area"></textarea></div>
 					<div>
 						<span></span>
 						<span></span>
@@ -75,10 +77,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="bgbody">
+			<div class="bgbody con">
 				<button class="danger">确认发布</button>
 			</div>
-			
 		</form>
 		
 	<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
