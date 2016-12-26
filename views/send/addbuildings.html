@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,
+			maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="keywords" content="杭州摆摆网络科技有限公司" />
+		<meta name="description" content="杭州摆摆网络科技有限公司是一家技术咨询：信息技术、网络技术；信息系统集成服务公司。主要做技术咨询：信息技术、网络技术；信息系统集成服务；网上销售：文具用品、体育用品、机械设备、五金、电子产品（除电子出版物）、家具、室内装饰材料、服装、服饰；体育设备出租。" />
+		<title>觅巢For You-杭州摆摆网络科技有限公司</title>
+		<link rel="stylesheet" href="../../public/css/send/addduildings.css" />
+	
+	</head>
+	<body>
+	<div class="title">
+		<div class="prev"><img src="../../public/img/login/nav_back_icon@2x.png" alt="" /></div>
+		<span>新增楼盘</span>
+	</div>
+		<div id="add_all">
+			<input id="building" type="text" placeholder="输入您想要增加的楼盘"/>
+			<input id="address" type="text" placeholder="输入楼盘的地址"/>
+			<span id="add_btn" class="add_btn">确定提交</span>
+		</div>
+	<div class="mark"></div>
+	<div class="alert">
+		<div class="top">提交成功，稍后会有专人与您联系</div>
+		<div class="bottom">确定</div>
+	</div>
+	</body>
+	<script src="../../public/js/zepto.min.js"></script>
+	<script src="../../public/js/touch.js"></script>
+	<script>
+		$(function () {
+			$('.prev').on('tap',function () {
+				window.history.go(-1);
+            });
+			$('#add_btn').on('tap',function () {
+				$('.mark').show();
+				$('.alert').show();
+            });
+			$('.alert').find('.bottom').on('tap',function () {
+				location.href = '../indexPage/indexPage.html';
+            });
+        });
+	</script>
+</html>

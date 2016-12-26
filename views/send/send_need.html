@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link type="text/css" rel="stylesheet" href="../../public/css/send/send_need.css">
+    <meta name="keywords" content="杭州摆摆网络科技有限公司" />
+    <meta name="description" content="杭州摆摆网络科技有限公司是一家技术咨询：信息技术、网络技术；信息系统集成服务公司。主要做技术咨询：信息技术、网络技术；信息系统集成服务；网上销售：文具用品、体育用品、机械设备、五金、电子产品（除电子出版物）、家具、室内装饰材料、服装、服饰；体育设备出租。" />
+    <title>觅巢For You-杭州摆摆网络科技有限公司</title>
+</head>
+<body>
+<div class="title" style="position: fixed;top: 0;z-index: 3">
+    <span>发布需求</span>
+    <div class="prev">取消</div>
+    <div class="next">发布</div>
+</div>
+
+<div class="con">
+    <div class="items_01"><input type="text" placeholder="鲁博"></div>
+    <div class="items_01"><input type="text" placeholder="18968045217"></div>
+    <div class="items_02">
+        <textarea class="items_02" rows="10" placeholder="描述一下您的需求，比如黄埔100-200m²，5-6元/m²/天，环境好点，底层，临近地铁"></textarea>
+    </div>
+</div>
+<div class="mark"></div>
+<div class="alert">
+    <div class="top">需求发布成功，请稍后</div>
+    <div class="bottom">确定</div>
+</div>
+</body>
+<script>
+    window.onload = function () {
+        document.getElementsByClassName('prev')[0].addEventListener('touchstart',function () {
+            window.history.go(-1);
+        });
+        document.getElementsByClassName('next')[0].addEventListener('touchstart',function () {
+            document.getElementsByClassName('mark')[0].style.display = 'block';
+            document.getElementsByClassName('alert')[0].style.display = 'block';
+        });
+        document.getElementsByClassName('bottom')[0].addEventListener('touchstart',function () {
+            location.href = '../index.html';
+        });
+    }
+</script>
+</html>
