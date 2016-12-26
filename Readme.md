@@ -1,0 +1,3 @@
+这是摆摆公司的一个APP项目，觅巢For You，关于房源的APP
+github地址:lovelybo/houseapp
+端口号16910
