@@ -12,9 +12,11 @@ body {
 #loading img {
   position: fixed;
   left: 50%;
-  margin-left: -63px;
+  margin-left: -75px;
   top: 26%;
   opacity: 1;
+  height:150px;
+  width:150px;
 }
 #loading p {
   font-size: 18px;
