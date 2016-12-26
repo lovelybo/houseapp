@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="./../public/css/login/jjr.css">
+    <meta name="keywords" content="杭州摆摆网络科技有限公司" />
+    <meta name="description" content="杭州摆摆网络科技有限公司是一家技术咨询：信息技术、网络技术；信息系统集成服务公司。主要做技术咨询：信息技术、网络技术；信息系统集成服务；网上销售：文具用品、体育用品、机械设备、五金、电子产品（除电子出版物）、家具、室内装饰材料、服装、服饰；体育设备出租。" />
+    <title>觅巢For You-杭州摆摆网络科技有限公司</title>
+</head>
+<body>
+<div class="register_top">
+    <div class="prev"><img src="./../../public/img/login/nav_back_icon@2x.png" alt=""></div>
+    <span>经纪人</span>
+</div>
+<p>必填项</p>
+<div class="must">
+    <div class="photo01">添加头像</div>
+    <input type="text" placeholder="姓名" id="ipt1">
+    <input type="text" placeholder="所属公司" id="ipt2">
+    <input type="text" placeholder="联系方式" id="ipt3">
+    <input type="text" placeholder="擅长商圈" id="ipt4">
+    <div class="photo02">名片正面</div>
+</div>
+<p>选填项</p>
+<div class="not_must">
+    <div class="photo03">全国经纪人证书</div>
+</div>
+<div class="done">完成</div>
+<!--注册成功界面-->
+<div class="registerDone">
+    <div class="tip">注册完成，等待后天确认</div>
+    <div class="ok">确认</div>
+</div>
+<script src="../../public/js/zepto.min.js"></script>
+<script src="../../public/js/touch.js"></script>
+</body>
+<script>
+    $(function () {
+        $('.register_top .prev').on('tap',function () {
+           window.history.go(-1);
+        });
+        var flag;
+        $('input').blur(function () {
+            var ipt1 = $('#ipt1').val();
+            var ipt2 = $('#ipt2').val();
+            var ipt3 = $('#ipt3').val();
+            var ipt4 = $('#ipt4').val();
+            var ipt5 = $('#ipt5').val();
+            if(ipt1!=''&&ipt2!=''&&ipt3!=''&&ipt4!=''&&ipt5!=''){
+                $('.done').css('background-color','#EA5404');
+                flag = true;
+            }
+        });
+        $('.done').on('tap',function () {
+
+            if(flag){
+                $('.register_top').hide();
+                $('.must').hide();
+                $('.not_must').hide();
+                $('p').hide();
+                $('.done').hide();
+                $('body').css('background-color','#B2B2B2');
+                $('.registerDone').show();
+            }
+        });
+        $('.registerDone .ok').on('tap',function () {
+            location.href = './login_01.html'
+        });
+    });
+</script>
+</html>
